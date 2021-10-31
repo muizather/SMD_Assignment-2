@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_insetEdge="bottom">
+
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F2F2"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bloodGroup_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:contentDescription="BloodGroup"
+            android:gravity="start"
+            app:srcCompat="@drawable/blood_o_" />
+
+        <LinearLayout
+            android:id="@+id/donor_linear_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#F3F2F2"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/contact_image"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:contentDescription="BloodGroup"
+                    android:gravity="start"
+                    app:srcCompat="@drawable/contact" />
+
+                <TextView
+                    android:id="@+id/donor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="Muiz Ather"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/city_image"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:contentDescription="BloodGroup"
+                    android:gravity="start"
+                    app:srcCompat="@drawable/city" />
+
+                <TextView
+                    android:id="@+id/city_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="24dp"
+                    android:text="Dhaka"
+                    android:textSize="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/donate_image"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:contentDescription="BloodGroup"
+                    android:gravity="start"
+                    app:srcCompat="@drawable/donate" />
+
+                <TextView
+                    android:id="@+id/donation_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="1dp"
+                    android:text="Ready to Donate"
+                    android:textSize="9dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/available_image"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:contentDescription="BloodGroup"
+                    android:gravity="start"
+                    app:srcCompat="@drawable/available" />
+
+                <TextView
+                    android:id="@+id/available_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="24dp"
+                    android:text="Available"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="9dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="40dp"
+            android:layout_height="74dp"
+            android:contentDescription="BloodGroup"
+            android:gravity="start"
+            app:srcCompat="@drawable/outgoing_call" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
