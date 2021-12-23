@@ -8,10 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,6 +25,8 @@ import java.util.Collection;
 public class DonorsRecyclerViewAdapter extends RecyclerView.Adapter<DonorsRecyclerViewAdapter.ViewHolder> implements Filterable {
 
     private Context mContext;
+    ImageButton btnOutgoingCall;
+    EditText contactInfo;
     private ArrayList<Donors> alldonors;
     private ArrayList<Donors> filteredDonors;
 
@@ -59,8 +64,8 @@ public class DonorsRecyclerViewAdapter extends RecyclerView.Adapter<DonorsRecycl
     }
 
 
-    public DonorsRecyclerViewAdapter(Context context, ArrayList<Donors> list) {
-        this.mContext = context;
+    public DonorsRecyclerViewAdapter(ArrayList<Donors> list) {
+        //this.mContext = context;
         this.filteredDonors = list;
         this.alldonors = new ArrayList<>(filteredDonors);
     }
@@ -69,6 +74,7 @@ public class DonorsRecyclerViewAdapter extends RecyclerView.Adapter<DonorsRecycl
     @Override
     public DonorsRecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.donors_list, parent, false);
+
         return new ViewHolder(view);
     }
 

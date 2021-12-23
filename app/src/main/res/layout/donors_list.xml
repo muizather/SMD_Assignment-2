@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     app:layout_insetEdge="bottom">
 
+
     <LinearLayout
         android:id="@+id/main_linear_layout"
         android:layout_width="match_parent"
@@ -31,7 +32,8 @@
             android:layout_height="wrap_content"
             android:background="#F3F2F2"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -141,13 +143,20 @@
 
         </LinearLayout>
 
-        <ImageView
+
+        <ImageButton
             android:id="@+id/phone"
             android:layout_width="40dp"
             android:layout_height="74dp"
+            android:layout_weight="0"
             android:contentDescription="BloodGroup"
-            android:gravity="start"
-            app:srcCompat="@drawable/outgoing_call" />
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:background="#F3F2F2"
+            app:srcCompat="@drawable/outgoing_call">
+        </ImageButton>
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

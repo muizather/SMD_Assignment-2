@@ -11,6 +11,9 @@
         android:theme="@style/Theme.Assignment1">
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Signup"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
